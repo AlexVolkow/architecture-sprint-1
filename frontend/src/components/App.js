@@ -19,10 +19,14 @@ import * as auth from "../utils/auth.js";
 function App() {
   const [isEditProfilePopupOpen, setIsEditProfilePopupOpen] =
     React.useState(false);
+
   const [isAddPlacePopupOpen, setIsAddPlacePopupOpen] = React.useState(false);
+
   const [isEditAvatarPopupOpen, setIsEditAvatarPopupOpen] =
     React.useState(false);
+
   const [selectedCard, setSelectedCard] = React.useState(null);
+
   const [cards, setCards] = React.useState([]);
 
   // В корневом компоненте App создана стейт-переменная currentUser. Она используется в качестве значения для провайдера контекста.
@@ -32,6 +36,7 @@ function App() {
   const [tooltipStatus, setTooltipStatus] = React.useState("");
 
   const [isLoggedIn, setIsLoggedIn] = React.useState(false);
+
   //В компоненты добавлены новые стейт-переменные: email — в компонент App
   const [email, setEmail] = React.useState("");
 
